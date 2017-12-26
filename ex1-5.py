@@ -69,7 +69,3 @@
 #
 # # Write string and perform computation after string using variables
 # print "The result of the above computation is", number_of_inches * inches_to_centimeters;
-
-
-
-# Lesson 6:
