@@ -10,10 +10,10 @@
 # print 7.0 / 4.0
 # print 7 / 4
 # print round(1.544);
-
-
-
-
+#
+#
+#
+#
 # Lesson 4: Variables and Names
 # cars = 100
 # space_in_car = 4.0
@@ -29,10 +29,10 @@
 # print "We can transport", carpool_capacity, "people today."
 # print "We have", passengers, "to carpool today."
 # print "We need to put about", average_passengers_in_car, "in each car."
-
-
-
-
+#
+#
+#
+#
 # Lesson 5: Format Characters
 # name = "Joey A"
 # age = 38
@@ -54,7 +54,7 @@
 #
 # # Adding Variables
 # print "If I add %d, %d, and %d I get %d." % (age, height, weight, age + height + weight);
-
+#
 # # A couple more format characters
 # # %r Print no matter what
 #
