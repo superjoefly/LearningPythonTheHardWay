@@ -99,7 +99,3 @@
 #
 # # Uses the return values from the function to define the embedded variables:
 # print "We'd have %d beans, %d jars and %d crates." % my_function(start)
-
-
-
-# Exercise 25: More Practice
