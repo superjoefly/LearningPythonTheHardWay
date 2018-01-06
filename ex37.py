@@ -191,16 +191,47 @@
 # print 'test' is 'test'
 
 
-# return
+# # return - exit function and return value
+# def my_function(b):
+#     a = b
+#     return a
 #
-# def
+# print my_function(10) # 10
+
+
+
+# def - used to define a function (see above)
+
+
+
+# # for - for loop
+# colors = ['red', 'orange', 'yellow']
+# for i in colors:
+#     print "The color is " + i
+
+
+# # lambda - used to create an anonymous function (no name)
+# a = lambda x: x*2
+# for i in range(1, 6):
+#     print(a(i)) # pass in i to lambda a as x
+
+
+
+# try - try, except, finally
+# def my_function():
+#     try:
+#         print 'Hello World!'/2
+#     except:
+#         print 'There was an error!'
+#     finally:
+#         print 'You Rock!!!'
 #
-# for
-#
-# lambda
-#
-# try
-#
+# my_function()
+
+
+##############
+
+
 # # DATA TYPES
 #
 # True
