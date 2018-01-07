@@ -234,80 +234,80 @@
 
 # # DATA TYPES
 #
-# True
+# True = true
 #
-# False
+# False = false
 #
-# None
+# None = absence of value or null value
 #
-# strings
+# strings = "Hello world!"
 #
-# numbers
+# numbers = 1, 1.2 etc
 #
-# floats
+# floats = written with decimal points or in scientific notation with e 10(2.5e2)
 #
-# lists
+# lists - arrays - groups
 
 
 
 # Escape Sequences
 
-# \\
+# \\ - backslash
 #
-# \'
+# \' - single quote
 #
-# \"
+# \" - double quote
 #
-# \a
+# \a -
 #
-# \b
+# \b - backspace
 #
-# \f
+# \f - formfeed
 #
-# \n
+# \n - newline - linefeed
 #
-# \r
+# \r - carriage return
 #
-# \t
+# \t - horizontal tab
 #
-# \v
+# \v - vertical tab
 
 
 
 # String Formats
 
 
-# %d
+# %d - old
 #
-# %i
+# %i - signed decimal integer
 #
-# %o
+# %o - octal integer
 #
-# %u
+# %u - unsigned decimal integer
 #
-# %x
+# %x - hexidecimal integer (lowercase letters)
 #
-# %X
+# %X - hexidecimal integer (uppercase letters)
 #
-# %e
+# %e - exponential notation (lowercase e)
 #
-# %E
+# %E - exponential notation (uppercase e)
 #
-# %f
+# %f - floating point real number
 #
-# %F
+# %F - ?
 #
-# %g
+# %g - the shorter of %f and %e
 #
-# %G
+# %G - the shorter of %f and %E
 #
-# %c
+# %c - character
 #
-# %r
+# %r - raw data (debugging)
 #
-# %s
+# %s - string
 #
-# %%
+# %% - concat percent symbol after substitution
 
 
 
@@ -315,62 +315,62 @@
 # OPERATORS
 
 
-# +
+# + addition
 #
-# -
+# - subtraction
 #
-# *
+# * multiplication
 #
-# **
+# ** exponent - left operand raised to the power of right
 #
-# /
+# / divide
 #
-# //
+# // floor division
 #
-# %
+# % modulus (remainder)
 #
-# <
+# < less than
 #
-# >
+# > greater than
 #
-# <=
+# <= less than or equal
 #
-# >=
+# >= greater than or equal
 #
-# ==
+# == is equal to
 #
-# !=
+# != not equal to
 #
-# <>
+# <> number in middle greater than two outside numbers
 #
-# ( )
+# ( ) parens
 #
-# [ ]
+# [ ] brackets (index)
 #
-# { }
+# { } curly brackets (functions)
 #
-# @
+# @ decorator - passes function/method/class as argument
 #
-# ,
+# , comma separator
 #
-# :
+# : defines code block
 #
-# .
+# . property of
 #
-# =
+# = sets one value to equal another
 #
-# ;
+# ; can be used to end line
 #
-# +=
+# += increments a += 1 (a = a + 1)
 #
-# - =
+# -= decrements a -= 1 (a = a - 1)
 #
-# *=
+# *= (a = a * 1) multiplication
 #
-# /=
+# /= (a = a / 1) division
 #
-# //=
+# //=  ?
 #
-# %=
+# %= (a = a % 1)
 #
-# **=
+# **= (a = a ** 1)
