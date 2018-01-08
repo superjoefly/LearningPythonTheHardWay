@@ -277,7 +277,7 @@
 # String Formats
 
 
-# %d - old
+# %d - integer (old)
 #
 # %i - signed decimal integer
 #
