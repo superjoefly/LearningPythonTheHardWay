@@ -165,3 +165,98 @@
 
 
 # Exercise 40: Modules, Classes and Objects
+
+# # DICT - [key]
+# friend = {'first_name': 'Joey', 'last_name': 'Atwood', 'age': 38}
+# print friend['first_name']
+
+
+# # MODULES - .key
+# # Import the module
+# import my_module
+# # Call the person method of my_module
+# my_module.full_name() # My name is Joey!
+# # Print the address variable of my_moudle
+# print my_module.first_name
+
+
+
+# # CLASSES - use the '.' operator - build objects
+
+# # Practice 1
+#
+# class Person(object):
+#     def __init__(self, arg1, arg2, arg3):
+#         self.first_name = arg1
+#         self.last_name = arg2
+#         self.age = arg3
+#
+#     def get_full_name(self):
+#         print "%s %s is %d years old" % (self.first_name, self.last_name, self.age)
+#
+# # Instantiate a new Person object
+# friend1 = Person('Joey', 'Atwood', 38)
+# print friend1.first_name
+# print friend1.last_name
+# print friend1.age
+# print friend1.get_full_name()
+#
+# print '-' * 10
+#
+# friend2 = Person('John', 'Doe', 49)
+# print friend2.first_name
+# print friend2.last_name
+# print friend2.age
+# print friend2.get_full_name()
+
+
+# # Practice 2
+#
+# class Song(object):
+#     def __init__(self, lyrics, name):
+#         self.lyrics = lyrics
+#         self.name = name
+#
+#     def sing_song(self):
+#         print self.lyrics % self.name
+#
+# name = 'Joey'
+# name = 'John'
+#
+# hb_lyrics = '''
+#     Happy birthday to you...
+#     Happy birthday to you...
+#     Happy birthday dear %s...
+#     Happy birthday to you!!!
+# '''
+#
+# # Instantiate new Song object and pass in variable hp_lyrics
+# happy_birthday = Song(hb_lyrics, name)
+#
+# happy_birthday.sing_song()
+
+
+# # Practice 3
+#
+# class Employees:
+#     'Common base class for all employees'
+#     empCount = 0
+#
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+#         Employees.empCount += 1
+#
+#     def displayCount(self):
+#         print "Total employees: ", Employees.empCount
+#
+#     def displayEmployee(self):
+#         print "Name: ", self.name, ", Salary: ", self.salary
+#
+# emp1 = Employees('John', 2000)
+# emp2 = Employees('Jane', 3000)
+#
+# emp1.displayEmployee()
+# emp2.displayEmployee()
+#
+# print "The total number of employees is: ", Employees.empCount
