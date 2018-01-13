@@ -13,13 +13,11 @@
 # class Engine(object):
 #
 #     def __init__(self, scene_map):
-#         self.scene_map = scene_map # a_map -> laser_weapon_armory
+#         self.scene_map = scene_map
 #
 #     def play(self):
 #         current_scene = self.scene_map.opening_scene()
-#         # LaserWeaponArmory()
 #         last_scene = self.scene_map.next_scene('finished')
-#         # Finished()
 #
 #         while current_scene != last_scene:
 #             next_scene_name = current_scene.enter()
