@@ -19,9 +19,11 @@
 #         last_room = self.room_map.next_room('finished')
 #
 #         while current_room != last_room:
+#             print '-------------'
 #             next_room_name = current_room.enter()
 #             current_room = self.room_map.next_room(next_room_name)
 #
+#         current_room.enter()
 #
 # class GoldRoom(Room):
 #
@@ -31,7 +33,7 @@
 #         print "You notice three doors on the floor numbered from 1 to 3"
 #         print "Which one do you choose?"
 #
-#         good_choice = randint(1, 5)
+#         good_choice = randint(1, 3)
 #         guess = raw_input("> ")
 #
 #         if int(guess) != good_choice:
@@ -39,30 +41,63 @@
 #             print "This wasn't a very good choice!"
 #             return 'death'
 #
-#         elif int(guess) == good_choice:
+#         else:
 #             print "You chose door %s" % guess
 #             print "Lucky You!"
-#             return 'finished!'
-#
-#         else:
-#             print "I don't know what that means..."
-#             return 'bronze_room'
+#             return 'finished'
 #
 #
 # class SilverRoom(Room):
 #
 #     def enter(self):
 #         print "You have entered the Silver Room!"
-#         print "You don't see anyone around."
-#         print "You're not sure what to do, by know you must do something..."
-#         print "There is a door to your right, and a door to your left."
-#         print "Which door do you choose?"
-#         door = raw_input('> ')
+#         print "You look around and see a green, one-eyed monster!"
+#         print "The monster thinks you would make a good treat, and starts"
+#         print "to chase you around the room!"
+#         print "You can either run back into the bronze room and try the other door,"
+#         print "or try one of your weapons..."
+#         print "What do you want to do?"
+#         print "1. return to Bronze Room to try another door!"
+#         print "2. try using a weapon!"
 #
-#         if door == 'left':
+#         choice = raw_input('> ')
+#
+#         if choice == '1':
 #             return 'bronze_room'
+#
+#         elif choice == '2':
+#
+#             print "You have 3 weapons...which one would you like to try?"
+#             print "1. sword"
+#             print "2. knife"
+#             print "3. potion"
+#
+#             weapon = raw_input('> ')
+#
+#             if weapon == '1':
+#                 print "You chose the %s, but it didn't help at all...the monster caught you and ate your head!" % weapon
+#                 return 'death'
+#
+#             elif weapon == '2':
+#                 print "You attacked that huge monster with a little knife??"
+#                 print "What's wrong with you?"
+#                 print "The monster was very satisfied with his meal..."
+#                 return 'death'
+#
+#             elif weapon == '3':
+#                 print "You took a position and through it into the monsters face!"
+#                 print "The monster shrunk down to a cute little fuzzy thing!"
+#                 print "Now he's rubbing up agains your leg...looks like you made a friend!"
+#                 return 'gold_room'
+#
+#             else:
+#                 print "You stumled around looking for your %s but couldn't find it!" % weapon
+#                 return 'death'
+#
 #         else:
-#             return 'gold_room'
+#             print "I have no idea what that means..."
+#             return 'bronze_room'
+#
 #
 # class BronzeRoom(Room):
 #
@@ -83,12 +118,20 @@
 #
 #     def enter(self):
 #         print "You won the game!!!"
+#         return 'finished'
 #         exit(1)
 #
 # class Death(Room):
 #
+#     message = [
+#         "You lost!! Dude?? You Suck!",
+#         "I think you may wanna stick with Tetris!",
+#         "Oh, well...at least you tried!",
+#         "I knew you couldn't do it!!!"
+#     ]
+#
 #     def enter(self):
-#         print "You lost!"
+#         print Death.message[randint(0, len(self.message) - 1)]
 #         exit(1)
 #
 #
