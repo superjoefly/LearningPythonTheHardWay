@@ -1,17 +1,17 @@
 # Exercise 41: Learning Object Oriented Language
 #
 # Practice using oop_test.py
-
-
+#
+#
 # # Exercise 42: Is-A, Has-A, Objects and Classes
 #
 # A class inherits from the class named 'object' to make a class, but, it's not an object...really it's a class, but don't forget to inherit from object
 #
 # # Python always requires (object) when you make a class
-
-
-
-
+#
+#
+#
+#
 # # Animal is-a object (yes, sort of confusing) look at the extra credit
 # class Animal(object):
 #     pass
@@ -49,10 +49,10 @@
 # print kitty.fur_color
 # print kitty.sound
 # print kitty.make_sound()
-
-
-
-
+#
+#
+#
+#
 # # Class Person is-a object
 # class Person(object):
 #     def __init__(self, name):
